@@ -30,35 +30,35 @@ A wiper speed control system for an automotive wiper controls the operational sp
 | LLR3 | 555 Timer Microcontroller.
 
 # **SWOT Analysis:**
-**Strength:**
+# **Strength:**
 - Can operate autonomously with fixed onboard stored speed limits
 - Increase safety.
 
-**Weakness:**
+# **Weakness:**
 - Can be frustrating at low penetration rates.
 - Can lead to potential decrease of average speed and consequently,to an increase of travel times.
 
-**Threats:**
+# **Threats:**
 - MTM delayed adaptation.
 - User acceptance in terms both purchase intention and frequent activation after purchase.
 
-# **4W and 1H:**
-**What:**
+## **4W and 1H:**
+# **What:**
 
 Automotive wiper controls the operational speed of a wiper in accordance with rain conditions.
 
-**Why:**
+# **Why:**
 
 Protects the vehicle's occupants and the interiors of the car from dust, stones, debris, bugs, rain, wind, and other such outside elements.
 
-**Where:**
+# **Where:**
 
 In Four Wheeler vechiles.
 
-**When:**
+# **When:**
 
 Commonly used during rainy season and when there is unwanted dust in windshield.
 
-**How:**
+# **How:**
 
 When we on the wiper switch it gets activated.
