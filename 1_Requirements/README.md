@@ -15,19 +15,20 @@ A wiper speed control system for an automotive wiper controls the operational sp
 
 ##  Details Requirements
 ###  High Level Requirements:
-| ID | Description |
-|------| ------| 
-| HLR1 | Rain Detection.
-|HLR2  | Data processing.
-|HLR3  | Motor control.
-|HLR4  | User Interface.
+| ID | Description |  Status |
+|------| ------| ------|
+| HLR1 | Rain Detection. | Implemented
+|HLR2  | Data processing. | Implemented
+|HLR3  | Motor control. | Implemented
+|HLR4  | User Interface. | Implemented
 
 ###   Low Level Requirements:
-| ID | Description |
-|-------|------|
-| LLR1 | Arm processor.
-| LLR2 | STM32 bit.
-| LLR3 | 555 Timer Microcontroller.
+| ID | Description | Status |
+|-------|------| ------|
+| LLR0 |  pressed two time - ON BLUE,GREEN,ORANGE.| Implemented
+| LLR1 | Arm processor.| Implemented
+| LLR2 | STM32 bit.| Implemented
+| LLR3 | 555 Timer Microcontroller.| Implemented
 
 # **SWOT Analysis:**
 # **Strength:**
