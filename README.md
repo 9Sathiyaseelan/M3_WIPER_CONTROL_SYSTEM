@@ -3,10 +3,10 @@
 
 
 ##   Badges
-* Codacy - Static Code Analysis
+* Codacy - Static Code Analysis [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0e42e53dac5743aba42974c25bdf34e8)](https://www.codacy.com/gh/9Sathiyaseelan/M3_WIPER_CONTROL_SYSTEM/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=9Sathiyaseelan/M3_WIPER_CONTROL_SYSTEM&amp;utm_campaign=Badge_Grade)
  
-* Codiga - Static Code Analysis
-* Codiga - Code Grade Analysis
+* Codiga - Static Code Analysis [![Codiga badge](https://api.codiga.io/project/33379/status/svg)]
+* Codiga - Code Grade Analysis [![Codiga badge](https://api.codiga.io/project/33379/score/svg)]
 
 
 # Working
