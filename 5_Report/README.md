@@ -1,3 +1,15 @@
+## Introduction
+The first windshield wipers were operated manually by moving a lever inside the car. Later wiper designs were powered by the engine's manifold vacuum. Virtually all wipers today employ an electric motor coupled with a linkage mechanism and are actuated by a knob beside the steering wheel.
+
+
+## Working
+-When the button is pressed ONCE, the car will be on ACC mode.
+-When the button is pressed TWICE, the car will be on Ignition mode.
+-When the button is pressed THREE times, wiper turn on.
+-When the button is pressed FOUR times, wiper turn off.
+
+
+
 #### TEST PLAN:
 ### High Level Test plan:
 | ID    | Description                             | Expected O/P | Actual O/P | 
