@@ -1,65 +1,65 @@
-#include<reg51.h>
- 
-sbit motorpin=P2^7;                         
-sbit digital=P2^1;
-sbit analog=P2^0;
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "Timer_Module.h"
+#include "PWM_module.h"
 
-void delay(int mulltiplier);
+#define INTERRUPT_INIT  SREG |= (1<<7)
+#define ADC_PIN	0
+#define SET_BIT(PORT,PIN)  PORT |= (1<<PIN)
+#define CLR_BIT(PORT,PIN)  PORT &= ~(1<<PIN)
+#define READ_BIT(PORT,PIN) PORT & (1<<PIN)
 
-void main()
+uint16_t Timer_count=0;
+uint16_t Adc_val=0;
+volatile uint8_t index=0;
+
+int main()
 {
-int i,k;	 
-digital=1;                               
-analog=1;                                  
-motorpin=0;                                 
-while(1)
-{
-		if(digital==0)                         
-{		
-		
-		if(analog==1)	
-		{ 
+    uint16_t Final=0;
+    //uint8_t Switch=0;
 
-        k=125 ; }         
-        
+    CLR_BIT(DDRD,PD2);   
+    SET_BIT(PORTD,PD2); 
+
+    TIMER_init();
+    PWM_init();
+    INTERRUPT_INIT;
+
+    while(1)         
+    {
+        if(!(READ_BIT(PIND,PD2)))  
+        {
+            START_TIMER;  
+            if(index==1)   
+            {
+                Final = READ_ADC(ADC_PIN);  
+
+                if(Final>25 && Final <=250)
+                    SET_PWM_VALUE(63);
+                else if(Final>251 && Final <=750)
+                    SET_PWM_VALUE(127);
+                 else if(Final>751 && Final <=1023)
+                    SET_PWM_VALUE(191);
+                index=0;
+            }
+        }
         else
-		{  
-         k=75  ;  }        
-										
-		for(i=0;i<k;i++)
-	 {
-		motorpin=1;
-		delay(20);           
-	  motorpin=0;
-	 delay(380);          
-		}
-									 
-   				 for(i=0;i<k;i++)
-		 {
-			 motorpin=1;
-			 delay(40);         
-		 motorpin=0;
-		 delay(360);         
- }
- }	
-		else             
-			{
-						motorpin=0;
-									}
- }
- }
-  
- void delay(int multiplier)          
+        {
+            STOP_TIMER;
+            SET_PWM_VALUE(0);
+        }
+      }
+
+    return 0;
+}
+
+ISR(TIMER0_OVF_vect)
 {
- int i;
-for(i=0;i<multiplier;i++)
-{
- TMOD=0x20;         
- TH1=0xFF;
- TL1=0xCE;                 
- TR1=1;
- while(TF1==0);
- TF1=0;
- TR1=0;
- } 
- }
+    Timer_count++;
+    if(Timer_count>=2930)
+    {
+        Timer_count=0;
+        index=1;
+    }
+}
