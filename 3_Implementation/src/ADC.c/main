@@ -16,6 +16,3 @@ uint16_t READ_ADC(uint8_t adcx)
 	while (ADCSRA & (1 << ADSC));
 	return ADC;
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
