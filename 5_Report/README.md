@@ -41,6 +41,12 @@ The first windshield wipers were operated manually by moving a lever inside the 
 
 
 
+## Block diagram:
+
+![download](https://user-images.githubusercontent.com/79862567/168427286-95aefc1e-474a-46ca-8882-c1f1d0daa819.png)
+
+
+
 ## ON state:
 
 ![on](https://user-images.githubusercontent.com/79862567/168426970-d1b11be8-00e3-408f-9758-e5d4cea7373a.jpeg)
