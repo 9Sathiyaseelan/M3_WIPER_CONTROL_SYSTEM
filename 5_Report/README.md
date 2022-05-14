@@ -38,3 +38,14 @@ The first windshield wipers were operated manually by moving a lever inside the 
 ## PARAMETER CIRCUIT DESIGN:
 
 ![Screenshot (19)](https://user-images.githubusercontent.com/79862567/168079426-34b05262-08b4-49ef-a57e-9ada2944171f.png)
+
+
+
+## ON state:
+
+![on](https://user-images.githubusercontent.com/79862567/168426970-d1b11be8-00e3-408f-9758-e5d4cea7373a.jpeg)
+
+
+## OFF state:
+
+![off (2)](https://user-images.githubusercontent.com/79862567/168426993-25e960e1-c7f5-49fb-b8fe-71a7b193d020.jpeg)
