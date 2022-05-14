@@ -8,6 +8,11 @@
 * Codiga - Static Code Analysis [![Codiga badge](https://api.codiga.io/project/33379/status/svg)]
 * Codiga - Code Grade Analysis [![Codiga badge](https://api.codiga.io/project/33379/score/svg)]
 
+## CppCheck
+
+[![Cpp-Check](https://github.com/9Sathiyaseelan/M3_WIPER_CONTROL_SYSTEM/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/9Sathiyaseelan/M3_WIPER_CONTROL_SYSTEM/actions/workflows/c-cpp.yml)
+
+[![Analysis](https://github.com/9Sathiyaseelan/M3_WIPER_CONTROL_SYSTEM/actions/workflows/analysis.yml/badge.svg)](https://github.com/9Sathiyaseelan/M3_WIPER_CONTROL_SYSTEM/actions/workflows/analysis.yml)
 
 # Working
 This file contain code for wiper system in C
